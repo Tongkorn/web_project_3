@@ -1,5 +1,5 @@
 .lead {
+  width: calc(100% - 296px);
   padding-top: 58px;
-  margin: 0 148px;
-  width: 76.875vw;
+  margin: 0 auto;
 }
