@@ -1,0 +1,7 @@
+.lead__image {
+  height: 48.046875vw;
+  box-sizing: border-box;
+  margin-top: 64px;
+  object-fit: cover;
+  width: 100%;
+}

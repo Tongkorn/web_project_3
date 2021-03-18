@@ -1,0 +1,9 @@
+.places {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  width: calc(100% - 296px);
+  display: grid;
+  grid-template: repeat(5, 1fr 35.9375vw) / 35.9375vw 1fr;
+  grid-gap: 48px 40px;
+}

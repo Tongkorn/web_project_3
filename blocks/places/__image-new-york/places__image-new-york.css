@@ -1,0 +1,6 @@
+.places__image-new-york {
+  background-image: url(../../../images/place-new-york.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

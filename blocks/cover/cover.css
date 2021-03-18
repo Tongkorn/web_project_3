@@ -1,0 +1,11 @@
+.cover {
+  position: relative;
+  margin: 92px 48px 0;
+  box-sizing: border-box;
+  width: 92.5vw;
+  height: 57.8125vw;
+}
+
+.cover:hover .cover__overlay {
+  opacity: 0.8;
+}

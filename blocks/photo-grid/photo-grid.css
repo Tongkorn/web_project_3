@@ -1,0 +1,5 @@
+.photo-grid {
+  box-sizing: border-box;
+  margin: 92px auto 0;
+  width: calc(100% - 96px);
+}

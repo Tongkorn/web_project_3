@@ -1,0 +1,8 @@
+.places__paragraph {
+  margin: 27px 0 0;
+  padding: 0;
+}
+
+.places__paragraph:first-child {
+  margin-top: 0;
+}

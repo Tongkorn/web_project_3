@@ -1,0 +1,8 @@
+.grid {
+  display: grid;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  grid-gap: 16px;
+}
