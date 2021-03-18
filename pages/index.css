@@ -8,7 +8,7 @@ html {
 @font-face {
   font-family: inter-regular;
   src: url("../../Inter-3.15/Inter\ Web/inter-Regular.woff");
-  font-style:  normal;
+  font-style: normal;
   font-weight: 400;
   font-display: optional;
 }
@@ -16,7 +16,7 @@ html {
 @font-face {
   font-family: inter-bold;
   src: url("../../Inter-3.15/Inter\ Web/inter-Bold.woff");
-  font-style:  normal;
+  font-style: normal;
   font-weight: 700;
   font-display: optional;
 }
@@ -24,13 +24,13 @@ html {
 @font-face {
   font-family: inter-black;
   src: url("../../Inter-3.15/Inter\ Web/inter-Black.woff");
-  font-style:  normal;
+  font-style: normal;
   font-weight: 900;
   font-display: optional;
 }
 
 .root {
-  font-family: 'inter', Arial, monospace;
+  font-family: "inter", Arial, monospace;
 
   /* font smoothing */
   -webkit-font-smoothing: antialiased;
@@ -44,15 +44,15 @@ html {
   /* apply kerning/ligatures to improve legibility (slows performance) */
   text-rendering: optimizeLegibility;
 
-  -ms-font-feature-settings: "kern";
+  -ms-font-feature-settings: "kern" 1;
   font-feature-settings: "kern";
-  background-color: #303235;
-  color: #e5e5e5;
 }
 
 .page {
   width: 100%;
-  border: 1px solid red;
+  margin: 0 auto;
+  background-color: #303235;
+  color: #e5e5e5;
 }
 
 .header {
@@ -63,14 +63,18 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 34px auto 0;
-  border: 1px solid red;
+  padding-top: 34px;
+  margin: 0 auto;
 }
 
 .logo {
-  max-width: 190px;
   width: 100%;
   height: auto;
+}
+
+.logo_place_header {
+  object-fit: cover;
+  max-width: 190px;
 }
 
 .header__links {
@@ -86,8 +90,6 @@ html {
   text-decoration: none;
   transition: 0.3s ease-in-out;
   color: #fff;
-
-  border: 1px solid red;
 }
 
 .header__lang-link:first-child {
@@ -116,8 +118,6 @@ html {
   max-width: 984px;
   min-width: 320px;
   margin: 58px auto 0;
-
-  border: 1px solid red;
 }
 
 .lead__title {
@@ -131,8 +131,6 @@ html {
   min-width: 288px;
   margin: 0;
   padding: 0;
-
-  border: 1px solid red;
 }
 .lead__subtitle {
   font-style: normal;
@@ -146,7 +144,6 @@ html {
   height: auto;
   margin: 32px auto 0;
   padding: 0;
-  border: 1px solid red;
 }
 .lead__image {
   width: 100%;
@@ -165,15 +162,13 @@ html {
   letter-spacing: 0.15em;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
 }
 
 .intro {
-  margin-top: 92px;
-  margin-left: 148px;
-  max-width: 690px;
+  margin: 92px auto 0;
+  box-sizing: border-box;
+  max-width: 984px;
   min-width: 288px;
-  border: 1px solid red;
 }
 
 .intro__title {
@@ -184,10 +179,7 @@ html {
   /* or 107% */
   margin: 0;
   padding: 0;
-  /* min-width: 288px;
-  max-width: 690px; */
-
-  border: 1px solid red;
+  max-width: 690px;
 }
 
 .intro__subtitle {
@@ -197,9 +189,7 @@ html {
   line-height: 30px;
   margin: 40px 0 0;
   padding: 0;
-  /* min-width: 288px;
-  max-width: 690px; */
-  border: 1px solid red;
+  max-width: 690px;
 }
 
 .intro__paragraph {
@@ -209,21 +199,18 @@ html {
   line-height: 163%;
   margin: 32px 0 0;
   padding: 0;
-  /* min-width: 288px;
-  max-width: 690px; */
-  border: 1px solid red;
+  max-width: 690px;
 }
 .intro__list {
   list-style: none;
   padding: 33px 0 0;
-  /* padding-top: 33px; */
   margin: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
 }
-.intro__list-accent {
+.intro__span-accent {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -235,18 +222,17 @@ html {
 
   margin: 92px auto 0;
   width: calc(100% - 96px);
-  border: 1px solid red;
 }
-.grid__container {
+
+.grid{
+  display: grid;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
   grid-template: repeat(3, 1fr) / repeat(4, 1fr);
   grid-gap: 16px;
-  border: 1px solid red;
 }
-.grid__item {
+.grid__items {
   margin: 0;
   padding: 0;
 }
@@ -256,7 +242,6 @@ html {
   height: 100%;
   max-height: 100%;
   object-fit: cover;
-  border: 1px solid red;
 }
 .places {
   box-sizing: border-box;
@@ -266,10 +251,8 @@ html {
   display: grid;
   grid-template: 76px 1fr/ 1fr 1fr;
   grid-gap: 48px 40px;
-
-  border: 1px solid red;
 }
-.place__title {
+.places__title {
   margin: 0;
   padding: 0;
   font-style: normal;
@@ -277,15 +260,13 @@ html {
   font-size: 72px;
   line-height: 76px;
   /* identical to box height, or 106% */
-  border: 1px solid red;
 }
-.place__website {
+.places__website {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  border: 1px solid red;
 }
-.place__url-heading {
+.places__url-heading {
   margin: 0;
   padding: 0;
   font-style: normal;
@@ -295,9 +276,8 @@ html {
   /* or 20px */
   letter-spacing: 0.2em;
   color: #aaaaaa;
-  border: 1px solid red;
 }
-.place__link {
+.places__link {
   margin: 4px 0 0;
   padding: 0;
   font-style: normal;
@@ -307,76 +287,59 @@ html {
   /* identical to box height, or 122% */
   transition: 0.5s ease;
   color: #fff;
-
-  border: 1px solid red;
 }
-.place__link:hover {
+.places__link:hover {
   opacity: 0.8;
 }
-.place__image {
+.places__image {
   box-sizing: border-box;
   width: 460px;
   height: 460px;
   width: 100%;
-  object-fit: cover;
+  margin: 0 auto;
 }
-.place__image-maine {
+.places__image-maine {
   background-image: url(../images/place-maine.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 0 auto;
-  border: 1px solid red;
 }
-.place__image-new-hampshire {
+.places__image-new-hampshire {
   background-image: url(../images/place-new-hampshire.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 0 auto;
-
-  border: 1px solid red;
 }
-.place__image-new-york {
+.places__image-new-york {
   background-image: url(../images/place-new-york.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 0 auto;
-
-  border: 1px solid red;
 }
-.place__image-pennsylvania {
+.places__image-pennsylvania {
   background-image: url(../images/place-pennsylvania.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 0 auto;
-
-  border: 1px solid red;
 }
-.place__image-ohio {
+.places__image-ohio {
   background-image: url(../images/place-ohio.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 0 auto;
-
-  border: 1px solid red;
 }
-.place__text {
+.places__text {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 163%;
   /* or 29px */
 }
-.place__paragraph {
+.places__paragraph {
   margin: 27px 0 0;
   padding: 0;
-  border: 1px solid red;
 }
-.place__paragraph:first-child {
+.places__paragraph:first-child {
   margin-top: 0;
 }
 
@@ -391,8 +354,6 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  /* border: 1px solid red; */
 }
 
 .cover__text {
@@ -426,7 +387,7 @@ html {
   max-height: 66px;
 }
 .cover__background {
-  display: block;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -457,7 +418,6 @@ html {
   margin: 0;
   list-style: none;
   text-decoration: none;
-
 }
 .footer__link {
   padding: 0;
@@ -517,8 +477,7 @@ html {
   }
   .header {
     width: calc(100% - 32px);
-    margin: 20px auto 0;
-    /* min-width: 288px; */
+    padding-top: 20px;
   }
   .header__links {
     margin: 10px 0 6px;
@@ -529,6 +488,8 @@ html {
   }
   .lead {
     margin: 50px auto 0;
+    width: 100%;
+    max-width: 100%;
   }
   .lead__title {
     font-style: normal;
@@ -536,7 +497,6 @@ html {
     font-size: 40px;
     line-height: 44px;
     width: calc(100% - 32px);
-    /* height: auto; */
   }
   .lead__subtitle {
     font-style: normal;
@@ -569,7 +529,7 @@ html {
     margin: 64px auto 0;
     width: calc(100% - 32px);
   }
-  .grid__container {
+  .grid {
     grid-template-columns: 1fr;
     grid-gap: 12px;
   }
@@ -579,38 +539,37 @@ html {
     grid-gap: 30px;
     margin: 64px auto 0;
   }
-  .place__title {
+  .places__title {
     font-style: normal;
     font-weight: 900;
     font-size: 32px;
     line-height: 35px;
     /* identical to box height, or 109% */
+    margin: 18px 16px auto;
+  }
+  .places__website {
     margin: 0 16px;
   }
-  .place__website {
-    margin: 0 16px;
-  }
-  .place__link {
+  .places__link {
     margin: 12px 0 0;
   }
-  .place__image {
+  .places__image {
     width: 320px;
     height: 320px;
     width: 100%;
-    object-fit: cover;
   }
-  .place__url-heading {
+  .places__url-heading {
     font-size: 12px;
     line-height: 12px;
     /* identical to box height, or 100% */
   }
-  .place__text {
+  .places__text {
     font-size: 16px;
     line-height: 163%;
     /* or 26px */
     margin: 0 16px;
   }
-  .place__paragraph {
+  .places__paragraph {
     margin: 25px 0 0;
   }
   .cover {
@@ -621,25 +580,25 @@ html {
   .cover__text {
     width: calc(100% - 32px);
     margin: 0 auto;
-    border: 1px solid red;
   }
   .cover__title {
     font-size: 32px;
     line-height: 35px;
     /* identical to box height, or 109% */
+    min-width: 288px;
   }
   .cover__subtitle {
     font-size: 14px;
     line-height: 16px;
     /* or 114% */
     margin: 16px 0 0;
+    min-width: 288px;
     text-align: center;
   }
   .footer {
     display: flex;
     flex-direction: column;
     margin: 64px 0 0 16px;
-    border: 1px solid red;
   }
   .footer__links {
     font-size: 24px;
@@ -647,19 +606,15 @@ html {
     /* identical to box height, or 100% */
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
   }
   .footer__links :not(:first-child) {
     margin: 32px 0 0;
-    border: 1px solid red;
   }
   .footer__copyright {
     font-size: 14px;
     line-height: 14px;
     /* identical to box height, or 100% */
     margin: 48px 0 24px;
-
-    border: 1px solid red;
   }
 
   .footer__link:hover:before {
@@ -671,8 +626,6 @@ html {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .header {
     width: calc(100% - 48px);
-    /* min-width: 720px; */
-    /* margin: 34px auto 0; */
   }
   .header__lang-link {
     font-size: 24px;
@@ -690,8 +643,7 @@ html {
   .lead__subtitle {
     font-size: 30px;
     line-height: 36px;
-    width: calc(100% - 248px);
-    /* margin: 32px auto 0; */
+    width: calc(100% - 148px);
   }
   .lead__image {
     margin: 56px auto 0;
@@ -700,14 +652,16 @@ html {
     margin-left: 24px;
   }
   .intro {
-    margin: 88px 24px 0;
+    margin-top: 88px;
+    width: calc(100% - 48px);
     min-width: 720px;
   }
   .photo-grid {
     margin: 88px auto 0;
     width: calc(100% - 48px);
+    min-width: 720px;
   }
-  .grid__container {
+  .grid{
     grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
   }
@@ -717,25 +671,24 @@ html {
     grid-template: 46px 1fr/ 1fr 1fr;
     grid-gap: 48px 28px;
   }
-  .place__title {
+  .places__title {
     font-style: normal;
     font-weight: 900;
     font-size: 42px;
     line-height: 46px;
     /* identical to box height, or 110% */
   }
-  .place__image {
+  .places__image {
     width: 340px;
     height: 340px;
     width: 100%;
-    object-fit: contain;
   }
-  .place__url-heading {
+  .places__url-heading {
     font-size: 12px;
     line-height: 12px;
     /* identical to box height, or 100% */
   }
-  .place__text {
+  .places__text {
     font-size: 16px;
     line-height: 163%;
     /* or 26px */
@@ -752,7 +705,6 @@ html {
 /* From 1024px to 1280px (from a tablet in landscape to a standard laptop). */
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .header {
-    /* min-width: 928px; */
     width: calc(100% - 96px);
   }
   .lead {
@@ -769,13 +721,14 @@ html {
     margin: 56px auto 0;
   }
   .intro {
-    margin-left: 48px;
+    width: calc(100% - 96px);
+    min-width: 928px;
   }
   .photo-grid {
     margin: 92px auto 0;
     width: calc(100% - 96px);
   }
-  .grid__container {
+  .grid {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 14px;
   }
@@ -784,11 +737,10 @@ html {
     grid-template: 76px 1fr/ 1fr 1fr;
     grid-gap: 48px 32px;
   }
-  .place__image {
+  .places__image {
     width: 440px;
     height: 440px;
     width: 100%;
-    object-fit: contain;
   }
   .cover {
     width: 100%;
