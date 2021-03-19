@@ -3,4 +3,6 @@
   width: 35.9375vw;
   height: 35.9375vw;
   margin: 0 auto;
+  max-width: 460px;
+  max-height: 460px;
 }

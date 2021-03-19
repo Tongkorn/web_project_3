@@ -2,4 +2,5 @@
   box-sizing: border-box;
   width: 76.875vw;
   margin: 92px auto;
+  max-width: 984px;
 }

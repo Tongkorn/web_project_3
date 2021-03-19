@@ -14,7 +14,6 @@
 @import url(../blocks/cover/cover.css);
 @import url(../blocks/centered/centered.css);
 
-
 @import url(../blocks/header/__links/header__links.css);
 @import url(../blocks/header/__lang-link/header__lang-link.css);
 @import url(../blocks/logo/logo.css);
@@ -35,6 +34,7 @@
 @import url(../blocks/grid/__items/grid__items.css);
 @import url(../blocks/grid/__item-photo/grid__item-photo.css);
 
+@import url(../blocks/places/__grid/places__grid.css);
 @import url(../blocks/places/__title/places__title.css);
 @import url(../blocks/places/__website/places__website.css);
 @import url(../blocks/places/__url-heading/places__url-heading.css);
@@ -57,7 +57,6 @@
 @import url(../blocks/footer/__links/footer__links.css);
 @import url(../blocks/footer/__link/footer__link.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
-
 
 html {
   font-family: "Inter", sans-serif;
@@ -94,6 +93,61 @@ html {
 @media screen and (min-width: 1280px) {
 }
 /*----------------------------------------------------------------*/
+/* From 1024px to 1280px (from a tablet in landscape to a standard laptop). */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .header {
+    width: calc(100% - 96px);
+  }
+  .lead {
+    width: 90.625vw;
+    padding-top: 50px;
+    min-width: 928px;
+  }
+  .lead__title {
+    width: calc(100% - 208px);
+  }
+  .lead__subtitle {
+    width: calc(100% - 404px);
+  }
+  .lead__image {
+    margin-top: 56px;
+    height: 56.640625vw;
+  }
+  .intro {
+    width: calc(100% - 96px);
+    min-width: 928px;
+  }
+  .photo-grid {
+    margin: 92px auto 0;
+    width: calc(100% - 96px);
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 14px;
+  }
+  .places {
+    width: calc(100% - 96px);
+  }
+  .places__grid {
+    grid-template: 1fr 100%/1fr 1fr;
+    grid-gap: 48px 32px;
+  }
+  .places__image {
+    width: 42.96875vw;
+    height: 42.96875vw;
+  }
+  .cover {
+    width: 100%;
+    height: auto;
+    margin: 92px 0 0;
+  }
+  .cover__background {
+    width: 100%;
+    height: 62.5vw;
+  }
+}
+
+/*----------------------------------------------------------------*/
 /* From 768px to 1024px (from a tablet in portrait to a tablet in landscape). */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .header {
@@ -104,7 +158,7 @@ html {
     line-height: 28px;
   }
   .lead {
-    width: 100vw;
+    width: 100%;
     padding-top: 50px;
   }
   .lead__title {
@@ -141,21 +195,38 @@ html {
   .places {
     margin: 88px auto 0;
     width: calc(100% - 48px);
-    grid-template: 46px 1fr/ 1fr 1fr;
+  }
+  .places__grid {
+    grid-template: 1fr 100%/1fr 1fr;
     grid-gap: 48px 28px;
   }
+  .places__grid:not(:first-child) {
+    margin-top: 73px;
+  }
   .places__title {
-    font-style: normal;
-    font-weight: 900;
     font-size: 42px;
     line-height: 46px;
     /* identical to box height, or 110% */
+  }
+  .places__website{
+    justify-content: space-between;
   }
   .places__url-heading {
     font-size: 12px;
     line-height: 12px;
     /* identical to box height, or 100% */
   }
+  .places__text {
+    font-size: 16px;
+    line-height: 163%;
+    /* or 26px */
+  }
+  .places__paragraph {
+    margin: 25px 0 0;
+  }
+  /* .places__paragraph:first-child {
+    margin-top: 0;
+  } */
   .places__image {
     width: 44.27083333333333vw;
     height: 44.270833333333vw;
@@ -171,63 +242,11 @@ html {
     margin: 89px 0 0;
   }
   .cover__background {
-    width: 100vw;
+    width: 100%;
     height: 62.5vw;
   }
   .footer {
     margin: 88px 24px 24px;
-  }
-}
-/*----------------------------------------------------------------*/
-/* From 1024px to 1280px (from a tablet in landscape to a standard laptop). */
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .header {
-    width: calc(100% - 96px);
-  }
-  .lead {
-    width: 90.625vw;
-    padding-top: 50px;
-  }
-  .lead__title {
-    width: calc(100% - 208px);
-  }
-  .lead__subtitle {
-    width: calc(100% - 404px);
-  }
-  .lead__image {
-    margin-top: 56px;
-    height: 56.640625vw;
-  }
-  .intro {
-    width: calc(100% - 96px);
-    min-width: 928px;
-  }
-  .photo-grid {
-    margin: 92px auto 0;
-    width: calc(100% - 96px);
-  }
-  .grid {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 14px;
-  }
-  .places {
-    margin: 92px auto 0;
-    width: calc(100% - 96px);
-    grid-template: 76px 1fr/ 1fr 1fr;
-    grid-gap: 48px 32px;
-  }
-  .places__image {
-    width: 42.96875vw;
-    height: 42.96875vw;
-  }
-  .cover {
-    width: 100%;
-    height: auto;
-    margin: 92px 0 0;
-  }
-  .cover__background {
-    width: 100vw;
-    height: 62.5vw;
   }
 }
 /*----------------------------------------------------------------*/
@@ -249,7 +268,7 @@ html {
   }
   .lead {
     padding-top: 50px;
-    width: 100vw;
+    width: 100%;
   }
   .lead__title {
     font-style: normal;
@@ -257,6 +276,7 @@ html {
     font-size: 40px;
     line-height: 44px;
     width: calc(100% - 32px);
+    max-width: 288px;
   }
   .lead__subtitle {
     font-style: normal;
@@ -265,6 +285,7 @@ html {
     line-height: 20px;
     width: calc(100% - 32px);
     margin: 16px auto 0;
+    max-width: 288px;
   }
   .lead__image {
     height: 62.5vw;
@@ -296,9 +317,14 @@ html {
   }
   .places {
     width: 100%;
-    grid-template: 1fr / 100vw;
-    grid-gap: 30px;
     margin: 64px auto 0;
+  }
+  .places__grid {
+    grid-template: 1fr / 100%;
+    grid-gap: 32px;
+  }
+  .places__grid:not(:first-child) {
+    margin-top: 48px;
   }
   .places__title {
     font-style: normal;
@@ -306,22 +332,24 @@ html {
     font-size: 32px;
     line-height: 35px;
     /* identical to box height, or 109% */
-    margin: 18px 16px auto;
+    margin: 0 16px;
   }
   .places__website {
     margin: 0 16px;
-  }
-  .places__link {
-    margin: 12px 0 0;
-  }
-  .places__image {
-    width: 100vw;
-    height: 100vw;
   }
   .places__url-heading {
     font-size: 12px;
     line-height: 12px;
     /* identical to box height, or 100% */
+
+    letter-spacing: 0.2em;
+  }
+  .places__link {
+    margin: 12px 0 0;
+  }
+  .places__image {
+    width: 100%;
+    height: 100vw;
   }
   .places__text {
     font-size: 16px;
@@ -356,7 +384,7 @@ html {
     text-align: center;
   }
   .cover__background {
-    width: 100vw;
+    width: 100%;
     height: 62.5vw;
   }
   .footer {
