@@ -34,3 +34,9 @@
   visibility: visible;
   transform: scaleX(1);
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer__link:hover:before {
+    visibility: hidden;
+  }
+}
