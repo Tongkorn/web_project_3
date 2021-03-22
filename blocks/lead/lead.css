@@ -1,8 +1,14 @@
 .lead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   width: calc(100% - 296px);
   padding-top: 58px;
   margin: 0 auto;
   max-width: 984px;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {

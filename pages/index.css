@@ -1,6 +1,5 @@
 @import url(../vendor/normalize.css);
-@import url(https://rsms.me/inter/inter.css);
-
+@import url(../pages/fonts.css);
 @import url(../blocks/root/root.css);
 @import url(../blocks/page/page.css);
 @import url(../blocks/header/header.css);
@@ -12,15 +11,15 @@
 @import url(../blocks/photo-grid/photo-grid.css);
 @import url(../blocks/places/places.css);
 @import url(../blocks/cover/cover.css);
-@import url(../blocks/centered/centered.css);
 
 @import url(../blocks/header/__links/header__links.css);
-@import url(../blocks/header/__lang-link/header__lang-link.css);
+@import url(../blocks/header/__link_lang/header__link_lang.css);
 @import url(../blocks/logo/logo.css);
-@import url(../blocks/logo/_place/logo_place_header.css);
 
 @import url(../blocks/lead/__title/lead__title.css);
 @import url(../blocks/lead/__subtitle/lead__subtitle.css);
+
+@import url(../blocks/lead/__figure/lead__figure.css);
 @import url(../blocks/lead/__image/lead__image.css);
 @import url(../blocks/lead/__caption/lead__caption.css);
 
@@ -34,19 +33,15 @@
 @import url(../blocks/grid/__items/grid__items.css);
 @import url(../blocks/grid/__item-photo/grid__item-photo.css);
 
-@import url(../blocks/places/__grid/places__grid.css);
-@import url(../blocks/places/__title/places__title.css);
-@import url(../blocks/places/__website/places__website.css);
-@import url(../blocks/places/__url-heading/places__url-heading.css);
-@import url(../blocks/places/__link/places__link.css);
-@import url(../blocks/places/__image/places__image.css);
-@import url(../blocks/places/__image-maine/places__image-maine.css);
-@import url(../blocks/places/__image-new-hampshire/places__image-new-hampshire.css);
-@import url(../blocks/places/__image-new-york/places__image-new-york.css);
-@import url(../blocks/places/__image-ohio/places__image-ohio.css);
-@import url(../blocks/places/__image-pennsylvania/places__image-pennsylvania.css);
-@import url(../blocks/places/__text/places__text.css);
-@import url(../blocks/places/__paragraph/places__paragraph.css);
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/cards/__image/cards__image.css);
+@import url(../blocks/cards/__title/cards__title.css);
+@import url(../blocks/cards/__website/cards__website.css);
+@import url(../blocks/cards/__url-heading/cards__url-heading.css);
+@import url(../blocks/cards/__link/cards__link.css);
+
+@import url(../blocks/cards/__text/cards__text.css);
+@import url(../blocks/cards/__paragraph/cards__paragraph.css);
 
 @import url(../blocks/cover/__text/cover__text.css);
 @import url(../blocks/cover/__title/cover__title.css);
@@ -57,32 +52,3 @@
 @import url(../blocks/footer/__links/footer__links.css);
 @import url(../blocks/footer/__link/footer__link.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
-
-html {
-  font-family: "Inter", sans-serif;
-}
-
-/*font-weight: 400px*/
-@font-face {
-  font-family: inter-regular;
-  src: url("../../Inter-3.15/Inter\ Web/inter-Regular.woff");
-  font-style: normal;
-  font-weight: 400;
-  font-display: optional;
-}
-/*font-weight: 700px*/
-@font-face {
-  font-family: inter-bold;
-  src: url("../../Inter-3.15/Inter\ Web/inter-Bold.woff");
-  font-style: normal;
-  font-weight: 700;
-  font-display: optional;
-}
-/*font-weight: 900px*/
-@font-face {
-  font-family: inter-black;
-  src: url("../../Inter-3.15/Inter\ Web/inter-Black.woff");
-  font-style: normal;
-  font-weight: 900;
-  font-display: optional;
-}

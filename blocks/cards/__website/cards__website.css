@@ -1,16 +1,16 @@
-.places__website {
+.cards__website {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .places__website {
+  .cards__website {
     justify-content: space-between;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .places__website {
+  .cards__website {
     margin: 0 16px;
   }
 }

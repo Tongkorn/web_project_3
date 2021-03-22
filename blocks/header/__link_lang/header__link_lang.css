@@ -1,31 +1,29 @@
-.header__lang-link {
+.header__link_lang {
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
   /* identical to box height, or 117% */
+  list-style: none;
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   transition: 0.3s ease-in-out;
   color: #fff;
+  margin-right: 18px;
 }
 
-.header__lang-link:first-child {
-  margin-right: 18px;
+.header__link_lang:hover {
+  opacity: 0.8;
   text-decoration: underline;
 }
 
-.header__lang-link:hover {
-  opacity: 0.8;
+.header__link_lang:focus {
+  text-decoration: underline;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .header__lang-link {
-    font-size: 24px;
-    line-height: 28px;
-  }
-}
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .header__lang-link {
+  .header__link_lang {
     font-size: 18px;
     line-height: 20px;
   }

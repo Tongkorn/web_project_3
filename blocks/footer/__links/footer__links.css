@@ -3,6 +3,7 @@
   margin: 0;
   list-style: none;
   text-decoration: none;
+  display: flex;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {

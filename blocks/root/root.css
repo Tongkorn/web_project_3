@@ -1,5 +1,5 @@
 .root {
-  font-family: "inter", Arial, monospace;
+  font-family: Inter, Arial, monospace;
 
   /* font smoothing */
   -webkit-font-smoothing: antialiased;
@@ -15,5 +15,5 @@
 
   -ms-font-feature-settings: "kern" 1;
   font-feature-settings: "kern";
-  background-color: #303235;
+  background-color: #2A2C2F;
 }

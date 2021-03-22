@@ -1,32 +1,32 @@
-.places__grid {
+.cards {
   display: grid;
   grid-template: 1fr 100%/1fr 1fr;
   grid-gap: 48px 40px;
   max-width: 984px;
 }
-.places__grid:not(:first-child) {
+.cards:not(:first-child) {
   margin-top: 80px;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .places__grid {
+  .cards {
     grid-gap: 48px 32px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .places__grid {
+  .cards {
     grid-gap: 48px 28px;
   }
-  .places__grid:not(:first-child) {
+  .cards:not(:first-child) {
     margin-top: 73px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .places__grid {
+  .cards {
     grid-template: 1fr / 100%;
     grid-gap: 32px;
   }
-  .places__grid:not(:first-child) {
+  .cards:not(:first-child) {
     margin-top: 48px;
   }
 }

@@ -1,0 +1,10 @@
+
+html {
+  font-family: Inter, sans-serif;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../../Inter-3.15/Inter\ Web/inter");
+  font-style: normal;
+}
