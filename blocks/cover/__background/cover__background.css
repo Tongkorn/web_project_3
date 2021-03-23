@@ -1,9 +1,0 @@
-.cover__background {
-  background-image: url(../../../images/cover-route-66.jpg);
-  background-size: cover;
-  background-position:center;
-  background-repeat:no-repeat;
-  min-width: 92.5vw;
-  min-height: 57.8125vw;
-  max-width:1184px;
-}

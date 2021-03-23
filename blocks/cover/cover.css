@@ -7,6 +7,13 @@
   align-items: center;
   text-align: center;
   max-width: 1184px;
+
+  background-image: url(../../../images/cover-route-66.jpg);
+  background-size: cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  min-width: 1184px;
+  min-height: 740px;
 }
 
 .cover:after {
@@ -36,21 +43,21 @@
 
 @media screen and (max-width: 1279px) {
   .cover {
-    min-width: 100%;
-    min-height: auto;
+    min-width: 1024px;
+    min-height: 640px;
   }
 }
 @media screen and (max-width: 1023px) {
   .cover {
-    min-width: 100%;
-    min-height: auto;
+    min-width: 768px;
+    min-height: 480px;
     margin: 89px 0 0;
   }
 }
 @media screen and (max-width: 767px) {
   .cover {
-    min-width: 100%;
-    min-height: auto;
+    min-width: 320px;
+    min-height: 200px;
     margin: 64px 0 0;
   }
 }
