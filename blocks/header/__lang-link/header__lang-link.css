@@ -1,4 +1,4 @@
-.header__link_lang {
+.header__lang-link {
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -13,17 +13,17 @@
   margin-right: 18px;
 }
 
-.header__link_lang:hover {
+.header__lang-link:hover {
   opacity: 0.8;
   text-decoration: underline;
 }
 
-.header__link_lang:focus {
+.header__lang-link:focus {
   text-decoration: underline;
 }
 
 @media screen and (max-width: 767px) {
-  .header__link_lang {
+  .header__lang-link {
     font-size: 18px;
     line-height: 20px;
   }
