@@ -6,22 +6,48 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  max-width: 1184px;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+.cover:after {
+  content: "";
+  background-color: #2a2c2f;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  opacity: 0.3;
+  transition: opacity 0.5s ease;
+}
+
+.cover:hover:after {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.cover > * {
+  position: relative;
+  z-index: 10;
+}
+
+@media screen and (max-width: 1279px) {
   .cover {
     min-width: 100%;
     min-height: auto;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
   .cover {
     min-width: 100%;
     min-height: auto;
     margin: 89px 0 0;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .cover {
     min-width: 100%;
     min-height: auto;
