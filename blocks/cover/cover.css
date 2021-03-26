@@ -1,5 +1,6 @@
 .cover {
   position: relative;
+  z-index: 1;
   margin: 92px auto 0;
   box-sizing: border-box;
   display: flex;
@@ -12,21 +13,21 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-width: 1184px;
-  min-height: 740px;
+  /* width: calc(100% - 96px); */
+  width:100%;
 }
 
 .cover:after {
   content: "";
   background-color: #2a2c2f;
   position: absolute;
+  z-index: -1;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   height: 100%;
   width: 100%;
-  z-index: 0;
   opacity: 0.3;
   transition: opacity 0.5s ease;
 }
@@ -36,21 +37,14 @@
   cursor: pointer;
 }
 
-.cover > * {
-  position: relative;
-  z-index: 10;
-}
-
 @media screen and (max-width: 1279px) {
   .cover {
-    min-width: 100%;
     min-height: 640px;
     max-width: 1024px;
   }
 }
 @media screen and (max-width: 1023px) {
   .cover {
-    min-width: 100%;
     min-height: 480px;
     margin: 89px 0 0;
     max-width: 768px;
@@ -58,7 +52,6 @@
 }
 @media screen and (max-width: 767px) {
   .cover {
-    min-width: 100%;
     min-height: 200px;
     margin: 64px 0 0;
     max-width: 320px;

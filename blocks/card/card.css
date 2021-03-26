@@ -1,32 +1,32 @@
-.cards {
+.card {
   display: grid;
   grid-template: 1fr 100%/1fr 1fr;
   grid-gap: 48px 40px;
   max-width: 984px;
 }
-.cards:not(:first-child) {
+.card:not(:first-child) {
   margin-top: 80px;
 }
 
 @media screen and (max-width: 1279px) {
-  .cards {
+  .card {
     grid-gap: 48px 32px;
   }
 }
 @media screen and (max-width: 1023px) {
-  .cards {
+  .card {
     grid-gap: 48px 28px;
   }
-  .cards:not(:first-child) {
+  .card:not(:first-child) {
     margin-top: 73px;
   }
 }
 @media screen and (max-width: 767px) {
-  .cards {
+  .card {
     grid-template: 1fr / 100%;
     grid-gap: 32px;
   }
-  .cards:not(:first-child) {
+  .card:not(:first-child) {
     margin-top: 48px;
   }
 }
