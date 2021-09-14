@@ -11,7 +11,7 @@
 This is a webpage about a coast-to-coast trip of the US.
 
 **Technologies and techniques**
--The project uses HTML, CSS structured in BEM style.
+-\nThe project uses HTML, CSS structured in BEM style.
 -It has responsive design for screen widths: 320, 768, 1024 and 1280 pixels.
 -Flex box and Grid are used together.
 -The texts uses "Inter" font family.
